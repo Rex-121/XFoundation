@@ -1,0 +1,10 @@
+use_frameworks!
+
+target 'XFoundation_Example' do
+  pod 'XFoundation', :path => '../'
+  #pod 'XFoundation/RAC', :path => '../'
+
+  target 'XFoundation_Tests' do
+    inherit! :search_paths
+  end
+end
